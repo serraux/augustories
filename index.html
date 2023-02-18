@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/Augustories_Nemotic.png">
     <title>Augustories</title>
@@ -11,6 +12,8 @@
 
 
 <body >
+
+
     <div class="" ><!--Main Container-->
 
    <div class="fixed h-auto top-0 z-40 w-full mb-2 shadow-xl bg-gray-100  opacity-95">
@@ -20,7 +23,7 @@
    </div>
    <div class=" flex h-screen bg-white-200  mt-24 p-4 opacity-90 items-center justify-center shadow-xl ">
     <div class="text-[#990000] font-bold ">
-        <p class=" text-center p-2 ">Una historia inicia con cualquier palabra y toda historia merece ser contada. Cada quién cuenta una historia como puede y como quiere.
+        <p class=" text-center p-2 ">Una palabra inicia una historia merece ser contada. Cada quién cuenta una historia como puede y como quiere.
         
         </p>
         <p class="text-center p-2 shadow-sm">
@@ -30,7 +33,7 @@
             Working on it.
         </p>
         <p class="text-center p-2 text-gray-500 shadow-sm">
-           Estamos trabando para compartir muchas historias.
+           Estamos trabajando para compartir muchas historias.
         </p>
         <p class="text-center p-2 text-red-800 mt-20 italic">
            Augustories Team
@@ -88,7 +91,8 @@
         </div>
     </div> 
     <div class="h-screen bg-white shadow-xl mt-2 p-6 flex items-center justify-center text-red-900">
-        <div>
+            <!--
+            <div>
             ...
             <p class="p-2"> 
                 La chica se quedó analizando lo que había escuchado y respondió:
@@ -105,6 +109,13 @@
             </p>
 
         </div>
+        -->
+
+       
+
+        
+            
+
     </div>
     <div class="bg-white-300 shadow-xl mt-2 mb-2 flex items-center justify-center">
         <div class="p-2 italic text-gray-500">
@@ -131,5 +142,22 @@
     -->
    
  </div> 
+
+ <!--Vue Code-->
+<div id="app"></div>
+        
+<script>
+   new Vue({
+     el: '#app',
+     data: {
+       message: 'Hola, mundo!'
+     }
+   })
+   </script>
+<!--Close Vue Code-->
+
+ 
+
 </body>
+
 </html>
